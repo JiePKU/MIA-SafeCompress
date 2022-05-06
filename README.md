@@ -34,7 +34,7 @@ To perform membership inference attacks (to obtain MIA Acc), you can run:
 ```python
 python mia_main.py --density 0.05 --epochs 100 --model vgg-c --data cifar100 --batch-size 128 --n_class 100
 ```
-Also, you can find the MIA Acc in the final output in the follow form
+Also, you can find the MIA Acc in the final output in the following form
 ```python
 MIA Evaluation: MIA accuracy: XXXX/XXXXX (XXXX) MIA Gain: XXXX
 ```
