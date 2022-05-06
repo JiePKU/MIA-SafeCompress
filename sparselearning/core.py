@@ -9,6 +9,12 @@ import numpy as np
 import math
 from  log import print_and_log
 
+
+"""
+This code is based on https://github.com/Shiweiliuiiiiiii/In-Time-Over-Parameterization
+"""
+
+
 def add_sparse_args(parser):
     parser.add_argument('--sparse', action='store_true', help='Enable sparse mode. Default: True.')
     parser.add_argument('--fix', action='store_true', help='Fix sparse connectivity during training. Default: True.')
