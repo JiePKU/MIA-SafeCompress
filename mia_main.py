@@ -47,6 +47,7 @@ cudnn.benchmark = True
 cudnn.deterministic = True
 import  argparse
 
+if not os.path.exists('./mia_checkpoints'): os.mkdir('./mia_checkpoints')
 
 if __name__ == "__main__":
 
