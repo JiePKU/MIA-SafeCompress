@@ -16,7 +16,7 @@ This code is an instance of our *SafeCompress* framework called *MIA-SafeCompres
 We take vgg with sparsity=0.05 on CIFAR100 for example
 
 
-You can obtain the task acuracy (Task Acc) for vgg by running following command:
+You can obtain the task acuracy (Task Acc) for vgg by running the following command:
 ```python
 python main.py --sparse --seed 18 --sparse_init ERK  --multiplier 1 --lr 0.1 --density 0.05 --update_frequency 4000 --epochs 300 --model vgg-c --data cifar100 --decay_frequency 30000 --batch-size 128 --n_class 100
 ```
