@@ -137,7 +137,6 @@ def main():
 
     args = parser.parse_args()
     setup_logger(args)
-    print_and_log(args)
 
     if args.fp16:
         try:
