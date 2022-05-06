@@ -188,13 +188,6 @@ def main():
         # MIA model
         adversary = Adversary(args.n_class).to(device)
         print_and_log(adversary)
-
-        print_and_log('=' * 60)
-        print_and_log('Prune mode: {0}'.format(args.death))
-        print_and_log('Growth mode: {0}'.format(args.growth))
-        print_and_log('Redistribution mode: {0}'.format(args.redistribution))
-        print_and_log('=' * 60)
-
         optimizer_mia = optim.Adam(adversary.parameters(), lr=0.001)
 
         optimizer = None
