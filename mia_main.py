@@ -130,10 +130,3 @@ if __name__ == "__main__":
         if inf_acc > best_mia_acc:
             best_mia_acc = inf_acc
             save_checkpoints(adversary,epoch,optimizer_mia,'./mia_checkpoints/'+args.save)
-
-    print_and_log("=" * 40)
-    param = torch.load('./mia_checkpoints/'+args.save)
-    adversary.load_state_dict(param['state_dict'])
-    print_and_log("the best mia acc epoch:{}".format(param['epoch']))
-    test_private_enum = enumerate(zip(infset_loader, test_infset_loader))
-    inf_acc = mia_evaluate(args, model, adversary, device, test_private_enum,is_test_set=True)
