@@ -1,5 +1,5 @@
 # MIA-SafeCompress
-This code is an instance of our SafeComrpess framework called MIA-SafeCompress against membership inference attacks (MIAs)
+This code is an instance of our *SafeComrpess* framework called *MIA-SafeCompress* against membership inference attacks (MIAs)
 
 ![数据格式](https://github.com/JiePKU/MIA-SafeCompress/blob/master/img/SafeCompress.JPG "数据格式")
 
