@@ -275,7 +275,7 @@ def main():
                         print('Saving model')
                         best_acc = val_acc
                         save_checkpoints([model, adversary], epoch, [optimizer, optimizer_mia], lr_scheduler,
-                                         "./checkpoints/" + args.save, mask)
+                                         "./checkpoints/" + args.model + "_" + str(args.density) + ".pth", mask)
 
                     if epoch >= args.pretrain_epoch:
                         inf_acc = mia_evaluate(args, model, adversary, device, test_private_enum)
@@ -300,10 +300,10 @@ def main():
                     if val_acc > best_acc:
                         print('Saving model')
                         best_acc = val_acc
-                        save_checkpoints([model,adversary],epoch,[optimizer,optimizer_mia],lr_scheduler,"/output/"+args.save, mask)
+                        save_checkpoints([model,adversary],epoch,[optimizer,optimizer_mia],lr_scheduler, "./checkpoints/" + args.model + "_" + str(args.density) + ".pth", mask)
 
         print('Testing model and adversity')
-        model, adversary = load_checkpoints(model,adversary,"/output/" + args.save)
+        model, adversary = load_checkpoints(model,adversary,"./checkpoints/" + args.model + "_" + str(args.density) + ".pth")
         evaluate(args, model, device, test_loader, is_test_set=True)
         if args.minmax:
             test_private_enum = enumerate(zip(infset_loader,test_infset_loader))
