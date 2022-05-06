@@ -1,12 +1,10 @@
 # MIA-SafeCompress
-This code is an instance of our *SafeComrpess* framework called *MIA-SafeCompress* against membership inference attacks (MIAs)
-
-![数据格式](https://github.com/JiePKU/MIA-SafeCompress/blob/master/img/SafeCompress.JPG "数据格式")
+This code is an instance of our *SafeCompress* framework called *MIA-SafeCompress* against membership inference attacks (MIAs)
 
 ## Requirements
-* Python 3.8
+* Python 3.7
 * pytorch 1.8
-* cuda 11.1
+* cuda 10.2
 * datetime
 * numpy
 * torchvision
@@ -14,7 +12,9 @@ This code is an instance of our *SafeComrpess* framework called *MIA-SafeCompres
 
 ## Quick Start
 
-You can ontain a well-trained sparse vgg on CIFAR100 by running:
+We take vgg with sparsity=0.05 on CIFAR100 for example
+
+You can obtain a well-trained sparse vgg by running:
 ```python
 python main.py --sparse --seed 18 --sparse_init ERK  --multiplier 1 --lr 0.1 --density 0.05 --update_frequency 4000 --epochs 300 --model vgg-c --data cifar100 --decay_frequency 30000 --batch-size 128 --n_class 100
 ```
