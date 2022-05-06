@@ -18,7 +18,7 @@ warnings.filterwarnings("ignore", category=UserWarning)
 cudnn.benchmark = True
 cudnn.deterministic = True
 
-if not os.path.exists('./models'): os.mkdir('./models')
+if not os.path.exists('./checkpoints'): os.mkdir('./checkpoints')
 if not os.path.exists('./logs'): os.mkdir('./logs')
 logger = None
 
