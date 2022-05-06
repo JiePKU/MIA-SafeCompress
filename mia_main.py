@@ -108,7 +108,7 @@ if __name__ == "__main__":
     adversary = Adversary(args.n_class).to(device)
     print_and_log(adversary)
     optimizer_mia = optim.Adam(adversary.parameters(), lr=0.001)
-    file_path = "./checkpoints/2022-05-01-23-16-27.pth"
+    file_path = "./checkpoints/" + args.model + "_" + str(args.density) + ".pth"
     model = load_model(file_path,model)
     model.to(device)
     evaluate(args, model, device, test_loader, is_test_set=False)
