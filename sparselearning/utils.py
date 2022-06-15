@@ -47,7 +47,7 @@ def get_cifar100_dataloaders(args, validation_split=0.0, max_threads=10):
         transforms.Normalize(cifar_mean, cifar_std),
     ])
 
-    trainset = torchvision.datasets.CIFAR100(root='/data/buffcal/cifar100', train=True, download=True,
+    trainset = torchvision.datasets.CIFAR100(root='../data/cifar100', train=True, download=True,
                                              transform=transform_train)
     trainset_length = len(trainset)
     random.seed(42)
@@ -62,7 +62,7 @@ def get_cifar100_dataloaders(args, validation_split=0.0, max_threads=10):
     train_loader = torch.utils.data.DataLoader(trainset, batch_size=args.batch_size, shuffle=True, num_workers=2)
 
     random.seed(18)
-    testset = torchvision.datasets.CIFAR100(root='/data/buffcal/cifar100', train=False, download=True, transform=transform_test)
+    testset = torchvision.datasets.CIFAR100(root='../data/cifar100', train=False, download=True, transform=transform_test)
     testset_length = len(testset)
     testset_index = random.sample(range(testset_length), int(testset_length / 2))
     referenceset = torch.utils.data.Subset(testset,testset_index)
