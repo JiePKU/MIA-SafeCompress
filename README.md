@@ -1,7 +1,7 @@
 # "Safety and Performance, Why not Both? Bi-Objective Optimized Model Compression toward AI Software Deployment" has been accepted by ASE2022 !!!
 
 ## SafeCompress Framework
-![SafeCompress](https://github.com/JiePKU/MIA-SafeCompress/blob/master/img/SafeCompress.JPG,"SafeCompress") 
+![SafeCompress](https://github.com/JiePKU/MIA-SafeCompress/blob/master/img/SafeCompress.JPG "SafeCompress") 
 
 ## MIA-SafeCompress
 This code is an instance of our *SafeCompress* framework called *MIA-SafeCompress* against membership inference attacks (MIAs)
