@@ -25,6 +25,27 @@ To perform membership inference attacks (to obtain MIA Acc), you can run:
 ```python
 python mia_main.py --density 0.05 --epochs 100 --model vgg-c --data cifar100 --batch-size 128 --n_class 100
 ```
+
+if it is helpful, please cite our paper:
+```python
+@inproceedings{zhu2022safety,
+author = {Zhu, Jie and Wang, Leye and Han, Xiao},
+title = {Safety and Performance, Why Not Both? Bi-Objective Optimized Model Compression toward AI Software Deployment},
+year = {2023},
+isbn = {9781450394758},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3551349.3556906},
+doi = {10.1145/3551349.3556906},
+booktitle = {37th IEEE/ACM International Conference on Automated Software Engineering},
+articleno = {88},
+numpages = {13},
+keywords = {membership inference attack, test-driven development, AI software safe compression},
+location = {Rochester, MI, USA},
+series = {ASE22}
+}
+```
+
 ### Acknowledgement
 This code is based on [ITOP](https://github.com/Shiweiliuiiiiiii/In-Time-Over-Parameterization)
 
