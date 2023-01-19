@@ -1,4 +1,4 @@
-## "Safety and Performance, Why not Both? Bi-Objective Optimized Model Compression toward AI Software Deployment" has been accepted by ASE2022 !!!
+### "Safety and Performance, Why not Both? Bi-Objective Optimized Model Compression toward AI Software Deployment" has been accepted by ASE2022 !!!  [[Arxiv](https://arxiv.org/abs/2208.05969)] [[ASE](https://dl.acm.org/doi/10.1145/3551349.3556906)]
 
 ### SafeCompress Framework
 ![SafeCompress](https://github.com/JiePKU/MIA-SafeCompress/blob/master/img/SafeCompress.JPG "SafeCompress") 
