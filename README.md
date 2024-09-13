@@ -1,3 +1,5 @@
+### [New] An extension of our ASE paper "Safety and Performance, Why Not Both? Bi-Objective Optimized Model Compression against Heterogeneous Attacks Toward AI Software Deployment" has been accepted by TSE2024 !!! [[Arxiv](https://arxiv.org/pdf/2401.00996)] [[IEEE TSE](https://ieeexplore.ieee.org/abstract/document/10378737)]
+
 ### "Safety and Performance, Why not Both? Bi-Objective Optimized Model Compression toward AI Software Deployment" has been accepted by ASE2022 !!!  [[Arxiv](https://arxiv.org/abs/2208.05969)] [[ASE](https://dl.acm.org/doi/10.1145/3551349.3556906)]
 
 ### SafeCompress Framework
@@ -34,6 +36,14 @@ if it is helpful, please cite our paper:
   booktitle={Proceedings of the 37th IEEE/ACM International Conference on Automated Software Engineering},
   pages={1--13},
   year={2022}
+}
+
+@article{zhu2024safety,
+  title={Safety and Performance, Why Not Both? Bi-Objective Optimized Model Compression against Heterogeneous Attacks Toward AI Software Deployment},
+  author={Zhu, Jie and Wang, Leye and Han, Xiao and Liu, Anmin and Xie, Tao},
+  journal={IEEE Transactions on Software Engineering},
+  year={2024},
+  publisher={IEEE}
 }
 ```
 
